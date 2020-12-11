@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Sociel Media Dashboard</title>
+</head>
+
+<body>
+
+    <div class="dark_mode">
+        <!--nav bar-->
+        <nav>
+            <div class="container">
+                <div class="title t-nav">
+                    <h1>Sociel Media Dashboard</h1>
+                    <p>Total Followers: 23,004</p>
+                </div>
+                <div class="switch_btn">
+                    <div class="switch-a">
+                        <p>Dark mode</p>
+                    </div>
+                    <div class="switch-b">
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--end nav bar-->
+
+        <!--cards group number one-->
+        <section>
+            <div class="background-cards"></div>
+            <div class="container">
+
+                <!--facebook card-->
+                <div class="card facebook-card">
+                    <div class="card_title">
+                        <i class="fab fa-facebook-square"></i>
+                        <p>@user</p>
+                    </div>
+                    <div class="card_content">
+                        <h1>1987</h1>
+                        <p>FOLLOWERS</p>
+                    </div>
+                    <div class="card_footer-positive">
+                        <p><i class="fas fa-sort-up"></i> 12 Today</p>
+                    </div>
+                </div>
+                <!--end facebook card-->
+
+                <!--twitter card-->
+                <div class="card twitter-card">
+                    <div class="card_title">
+                        <i class="fab fa-twitter"></i>
+                        <p>@user</p>
+                    </div>
+                    <div class="card_content">
+                        <h1>1044</h1>
+                        <p>FOLLOWERS</p>
+                    </div>
+                    <div class="card_footer-positive">
+                        <p><i class="fas fa-sort-up"></i> 99 Today</p>
+                    </div>
+                </div>
+                <!--end twitter card-->
+
+                <!--instagram card-->
+                <div class="card instagram-card">
+                    <div class="card_title">
+                        <i class="fab fa-instagram"></i>
+                        <p>@user</p>
+                    </div>
+                    <div class="card_content">
+                        <h1>11k</h1>
+                        <p>FOLLOWERS</p>
+                    </div>
+                    <div class="card_footer-positive">
+                        <p><i class="fas fa-sort-up"></i> 1099 Today</p>
+                    </div>
+                </div>
+                <!--end instagram card-->
+
+                <!--youtube card-->
+                <div class="card youtube-card">
+                    <div class="card_title">
+                        <i class="fab fa-youtube"></i>
+                        <p>@user</p>
+                    </div>
+                    <div class="card_content">
+                        <h1>8239</h1>
+                        <p>FOLLOWERS</p>
+                    </div>
+                    <div class="card_footer-nigative">
+                        <p><i class="fas fa-sort-down"></i> 144 Today</p>
+                    </div>
+                </div>
+                <!--end youtube card-->
+
+            </div>
+        </section>
+        <!--end cards group number one-->
+        <section>
+            <div class="container title">
+                <h2>Overview - Today</h2>
+            </div>
+        </section>
+
+        <!--cards group number two-->
+        <section>
+            <div class="container marg">
+                <!--facebook-->
+                <div class="card2">
+                    <div class="card2_title">
+                        <p>Page Views</p>
+                        <i class="fab fa-facebook-square"></i>
+                    </div>
+                    <div class="card2_content">
+                        <h1>78</h1>
+                        <p class="card_footer-positive"><i class="fas fa-sort-up"></i>3%</p>
+                    </div>
+                </div>
+                <div class="card2">
+                    <div class="card2_title">
+                        <p>Likes</p>
+                        <i class="fab fa-facebook-square"></i>
+                    </div>
+                    <div class="card2_content">
+                        <h1>52</h1>
+                        <p class="card_footer-nigative"><i class="fas fa-sort-down"></i>2%</p>
+                    </div>
+                </div>
+                <!--end facebook-->
+
+                <!--instagram-->
+                <div class="card2">
+                    <div class="card2_title">
+                        <p>Likes</p>
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="card2_content">
+                        <h1>5462</h1>
+                        <p class="card_footer-positive"><i class="fas fa-sort-up"></i>2257%</p>
+                    </div>
+                </div>
+                <div class="card2">
+                    <div class="card2_title">
+                        <p>Page Views</p>
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="card2_content">
+                        <h1>52k</h1>
+                        <p class="card_footer-positive"><i class="fas fa-sort-up"></i>1357%</p>
+                    </div>
+                </div>
+                <!--end instagram-->
+
+                <!--twitter-->
+                <div class="card2">
+                    <div class="card2_title">
+                        <p>Retweets</p>
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <div class="card2_content">
+                        <h1>177</h1>
+                        <p class="card_footer-positive"><i class="fas fa-sort-up"></i>303%</p>
+                    </div>
+                </div>
+                <div class="card2">
+                    <div class="card2_title">
+                        <p>Likes</p>
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <div class="card2_content">
+                        <h1>507</h1>
+                        <p class="card_footer-positive"><i class="fas fa-sort-up"></i>553%</p>
+                    </div>
+                </div>
+                <!--end twitter-->
+
+                <!--youtube-->
+                <div class="card2">
+                    <div class="card2_title">
+                        <p>Page Views</p>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <div class="card2_content">
+                        <h1>78</h1>
+                        <p class="card_footer-nigative"><i class="fas fa-sort-down"></i>19%</p>
+                    </div>
+                </div>
+                <div class="card2">
+                    <div class="card2_title">
+                        <p>Page Views</p>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <div class="card2_content">
+                        <h1>78</h1>
+                        <p class="card_footer-nigative"><i class="fas fa-sort-down"></i>12%</p>
+                    </div>
+                </div>
+                <!--end youtube-->
+            </div>
+        </section>
+        <!--cards group number two-->
+    </div>
+</body>
+
+</html>

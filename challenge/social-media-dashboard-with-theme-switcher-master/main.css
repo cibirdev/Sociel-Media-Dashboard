@@ -1,0 +1,381 @@
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0 auto;
+    font-family: 'Inter', sans-serif;
+    height: 100%;
+    background-color: hsl(230, 17%, 14%);
+}
+
+/* navbar */
+nav {
+    padding-top: 1rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+
+
+.container {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.title {
+    line-height: .5rem;
+}
+
+.switch_btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.switch_btn p {
+    margin-right: .5rem;
+}
+
+
+
+/*Toggle Switch*/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(55, 143, 230);
+    background: linear-gradient(90deg, rgba(55, 143, 230, 1) 0%, rgba(62, 218, 130, 1) 100%);
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 17px;
+    width: 17px;
+    left: 3px;
+    bottom: 4px;
+    background-color: hsl(230, 17%, 14%);
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+
+input:checked+.slider {
+    background: hsl(230, 22%, 74%);
+}
+
+input:checked+.slider:before {
+    background-color: white;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px hsl(230, 22%, 74%);
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/*end Toggle Switch*/
+
+/* end navbar */
+
+/*CARD*/
+
+
+
+
+.background-cards {
+    height: 15%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.card {
+    width: 23%;
+    text-align: center;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    line-height: 3rem !important;
+    border-radius: .4rem;
+    margin-bottom: 1rem;
+
+}
+
+
+
+.card_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card_title p {
+    margin-left: .5rem;
+}
+
+.card_content {
+    line-height: .2rem !important;
+    margin-bottom: 2rem;
+}
+
+.card_content h1 {
+    font-size: 4rem;
+}
+
+.card_content p {
+    letter-spacing: .3rem;
+    margin-top: -.5rem;
+}
+
+.fa-facebook-square {
+    font-size: 1.5rem !important;
+    color: hsl(208, 92%, 53%) !important;
+}
+
+.fa-twitter {
+    font-size: 1.5rem !important;
+    color: hsl(203, 89%, 53%) !important;
+}
+
+.fa-youtube {
+    font-size: 1.5rem !important;
+    color: hsl(348, 97%, 39%) !important;
+}
+
+.fa-instagram {
+    font-size: 1.5rem !important;
+    background: -webkit-linear-gradient(hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.facebook-card {
+    border-top: .3rem solid hsl(208, 92%, 53%) !important;
+}
+
+.twitter-card {
+    border-top: .3rem solid hsl(203, 89%, 53%) !important;
+}
+
+.instagram-card {
+    border-top: .3rem solid;
+    border-image-source: linear-gradient(45deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    border-image-slice: 1;
+    border-radius: .4rem !important;
+}
+
+
+.youtube-card {
+    border-top: .3rem solid hsl(348, 97%, 39%) !important;
+}
+
+.card_footer-positive {
+    color: hsl(163, 72%, 41%);
+}
+
+.card_footer-nigative {
+    color: hsl(356, 69%, 56%);
+}
+
+/*ENDCARD*/
+
+/*cards num 2*/
+
+.title {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card2 {
+    width: 23%;
+    border-radius: .4rem;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card2_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.card2_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.card2_content h1 {
+    font-size: 1.5rem;
+}
+
+.marg {
+    margin-bottom: 2rem;
+}
+
+/*end cards num 2*/
+
+/*dark mode*/
+.dark_mode nav {
+    background-color: hsl(232, 19%, 15%);
+    color: hsl(0, 0%, 100%);
+}
+
+.dark_mode .title p {
+    color: hsl(228, 34%, 66%);
+}
+
+.dark_mode .card {
+    background: hsl(228, 28%, 20%);
+    color: hsl(228, 34%, 66%);
+}
+
+.dark_mode .card:hover {
+    background: hsl(228, 27%, 29%);
+}
+
+.dark_mode .background-cards {
+    background-color: hsl(232, 19%, 15%) !important;
+}
+
+
+.dark_mode .card_content h1 {
+    color: hsl(0, 0%, 100%);
+}
+
+.dark_mode .title {
+    color: hsl(0, 0%, 100%);
+}
+
+.dark_mode .card2 {
+    color: hsl(228, 34%, 66%);
+    background: hsl(228, 28%, 20%);
+}
+
+.dark_mode .card2:hover {
+    background: hsl(228, 27%, 29%);
+}
+
+.dark_mode .card2_content h1 {
+    color: hsl(0, 0%, 100%);
+}
+
+/*end dark mode*/
+
+
+/*light mode*/
+.light_mode nav {
+    background-color: hsl(225, 100%, 98%) !important;
+    color: hsl(230, 17%, 14%) !important;
+}
+
+.light_mode .title {
+    color: hsl(228, 12%, 44%);
+}
+
+.light_mode .title p {
+    color: hsl(228, 34%, 66%);
+}
+
+.light_mode .card {
+    background: hsl(227, 47%, 96%) !important;
+    color: hsl(228, 12%, 44%) !important;
+}
+
+.light_mode .card:hover {
+    background: hsl(0, 0%, 86%) !important;
+}
+
+.light_mode .background-cards {
+    background-color: hsl(225, 100%, 98%) !important;
+}
+
+
+.light_mode .card_content h1 {
+    color: hsl(230, 17%, 14%) !important;
+}
+
+
+.light_mode .card2 {
+    color: hsl(230, 17%, 14%) !important;
+    background: hsl(227, 47%, 96%) !important;
+}
+
+.light_mode .card2_content h1 {
+    color: hsl(230, 17%, 14%);
+}
+
+.light_mode .card2:hover {
+    background: hsl(0, 0%, 86%) !important;
+}
+
+
+/*end light mode*/
+
+/*Layout Mobile: 375px*/
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 80%;
+    }
+
+    .dark_mode .t-nav {
+        border-bottom: .1rem solid hsl(228, 34%, 66%);
+        width: 100%;
+        padding-bottom: .5rem;
+    }
+
+    .switch_btn {
+        margin: auto;
+    }
+
+    .card,
+    .card2 {
+        width: 100%;
+    }
+}
